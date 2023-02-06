@@ -1,7 +1,6 @@
 databases:
   - name: robert-garcia
     databaseName: rg_prod_db
-    user: rgarcia
 
 services:
   - type: web
@@ -10,9 +9,9 @@ services:
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
-      - key: postgres://rgarcia:QpiBnbgX5NxeEHaEdQfnEvfsbUVB32BE@dpg-cfg9rnha6gdma8n33bbg-a/rg_prod_db
+      - key: <%= ENV['RENDER_DB_URL'] %>
         fromDatabase:
-          name: rg_prod_db
+          name: robert-garcia
           property: connectionString
-      - key: 23d7e427ffa0c972671c0b4ae4fc50df
+      - key: <%= ENV['RAILS_MASTER_KEY'] %>
         sync: false
