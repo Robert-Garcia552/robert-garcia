@@ -67,3 +67,4 @@ end
 # Added Gems
 gem "dotenv-rails"
 gem 'sass-rails', '~> 6.0'
+gem 'bootstrap', '~> 5.2.2'

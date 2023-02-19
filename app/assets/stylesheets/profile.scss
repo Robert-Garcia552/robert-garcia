@@ -2,10 +2,38 @@ html, body {
   margin: 0;
   height: 100%;
   font-family: 'Noto Sans', sans-serif;
-  background: #2c3e50;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
+  margin: 34px 0;
+}
+
+.logo {
+  width: 250px;
+  height: 150px;
+}
+
+.logo-row {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tech-logos {
+  width: 125px;
+  height: 125px;
+}
+
+.nav {
+  justify-content: center;
+
+  .nav-link {
+    &, &:active, &:hover, &:visited {
+      color: black !important;
+    }
+  }
+}
+
+.hero-text {
+  max-width: 500px;
+  text-align: center;
 }
 
 .material-symbols-outlined {
@@ -17,40 +45,36 @@ html, body {
   margin-right: 6px;
 }
 
-.main-container-flex {
-  display: flex;
-  flex-direction: row;
-  row-gap: 24px;
-  column-gap: 32px;
-  justify-content: space-evenly;
-  margin: 32px 0;
-}
-
 .flex {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-evenly;
+
+  &.align-center {
+    align-items: center;
+  }
 }
 
-.row {
-  margin-bottom: 24px;
-}
-
-.last {
-  margin-bottom: 0px;
-}
-
-.demographics {
-  margin: 16px;
-}
-
-.demographics > .flex {
-  margin: 16px 0;
-  align-items: center;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .avatar {
   border-radius: 50%;
   height: 150px;
   width: 150px;
+}
+
+.profile-item {
+  display: flex;
+  margin-left: 8px;
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.about-container {
+  max-width: 500px;
+  margin: auto 0;
 }

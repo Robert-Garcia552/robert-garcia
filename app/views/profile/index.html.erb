@@ -1,46 +1,40 @@
-<div class="main-container-flex">
-  <div>
-    <div class="flex row">
-      <%= image_tag "profile_pic.jpg", alt: "Profile Avatar", class: "avatar" %>
-      <div class="demographics">
-        <div class="flex">
-          <span class="material-symbols-outlined">
-            person
-          </span>
-          <span>Hi, I'm Robert Garcia</span>
-        </div>
-        <div class="flex">
-          <span class="material-symbols-outlined">
-            devices
-          </span>
-          <span>Software Engineer</span>
-        </div>
-        <div class="flex">
-          <span class="material-symbols-outlined">
-            home
-          </span>
-          <span>Miami, Florida</span>
-        </div>   
+<div class="flex align-center mb-4">
+  <div class="flex align-center">
+    <%= image_tag "profile_pic.jpg", alt: "Profile Avatar", class: "avatar" %>
+    <div class="demographics">
+      <div class="profile-item">
+        <span class="material-symbols-outlined">
+          person
+        </span>
+        <span>Hi, I'm Robert Garcia</span>
       </div>
-    </div>
-    <div>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>jQuery</li>
-        <li>Ruby on Rails</li>
-        <li>React.js</li>
-        <li>Next.js</li>
-      </ul>
+      <div class="profile-item">
+        <span class="material-symbols-outlined">
+          devices
+        </span>
+        <span>Software Engineer</span>
+      </div>
+      <div class="profile-item">
+        <span class="material-symbols-outlined">
+          home
+        </span>
+        <span>Miami, Florida</span>
+      </div>   
     </div>
   </div>
   <div>
-    <div class="about-container bordered">
-      About This page
-    </div>
-    <div>
-      <p>TESTING</p>
-    </div>
+    <p class="hero-text mb-0">
+      Full-stack developer working remotely in Miami, FL. I enjoy participating in the full software development lifecycle, from ideation to bringing design concepts to life. 
+    </p>
   </div>
+</div>
+<div class="flex logo-row mb-4">
+  <%= image_tag "rails-logo.png", alt: "React Logo", class: "tech-logos" %>
+  <%= image_tag "react-logo.png", alt: "React Logo", class: "tech-logos" %>
+  <%= image_tag "js-logo.jpeg", alt: "React Logo", class: "tech-logos" %>
+  <%= image_tag "mysql-logo.png", alt: "React Logo", class: "tech-logos" %>
+</div>
+<div class="flex" id="contact">
+  <%= image_tag "programmer.gif", alt: "Programmer GIF", class: "programmer-gif" %>
+  <p>FORM HERE</p>
 </div>
